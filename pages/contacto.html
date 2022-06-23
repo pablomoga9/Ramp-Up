@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <main>
+        <section class="showcase">
+            <header>
+              <h2 class="logo"></h2>
+              <div class="toggle"></div>
+            </header>
+            <video src="../assets/videos/bubbleBackground.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+            <article class="text">
+              <h2>Contacto</h2> 
+              <h3>Escríbeme para cualquier oferta o proposición de colaboración</h3>
+              
+              <!-- <a href="portfolio.html">Conocer más</a> -->
+            </article>
+            <ul class="social">
+              <li><a href="https://www.linkedin.com/in/pablo-moya-garc%C3%ADa-526588167/" target="_blank"><img src="../assets/img/linkedin-brands.svg" alt="">Linkedin</a></li>
+              <li><a href="https://www.youtube.com/channel/UC2v0v46sxnCd_NK-k0jIi9w" target="_blank"><img src="../assets/img/youtube-brands.svg" alt="">YouTube</a></li>
+              
+            </ul>
+          </section>
+          
+          <article class="menuHamb">
+            <ul>
+              <li><a href="../index.html">Bienvenida</a></li>
+              <li><a href="./biografia.html">Sobre mí</a></li>
+              <li><a href="./portfolio.html">Portfolio</a></li>
+              <li><a href="#">Contacto</a></li>
+             
+            </ul>
+          </article>
+        </section>
+    </main>
+
+
+   <div>
+    <section class="contact">
+        <form action="#contact">
+            <label for="fname">Nombre: </label><br>
+            <input type="text" id="fname" name="fname" placeholder="Introduce tu nombre" minlength="1" maxlength="20" required><br>
+            
+            <label for="lname">Apellidos:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Introduce tus apellidos" minlength="1" maxlength="35" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Introduce tu email" required><br>
+
+            <input type="submit" value="Submit">
+           
+        </form>
+        <form action="#comment">
+            <label for="places">¿Cuál es tu valoración de la web?:</label>
+            <select id="rating" name="rating">
+                <option value="good">Buena</option>
+                <option value="toImprove">Mejorable</option>
+                <option value="messy">Desastrosa</option>
+                <option value="great">Estupenda</option>
+            </select><br><br>
+            <label for="comments">Comentario</label><br>
+            <textarea rows="7" cols="40" name="comments" wrap="hard" placeholder="Introduce un comentario">
+            </textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+      </section>
+   </div>
+
+    <script src="../scripts/script.js"></script>
+
+
+</body>
+</html>
